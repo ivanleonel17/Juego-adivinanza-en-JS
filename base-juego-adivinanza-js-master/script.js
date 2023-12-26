@@ -4,10 +4,12 @@ let numeroAzar = Math.floor(Math.random() * 100) + 1;
 // Obtener los elementos del DOM
 let numeroEntrada = document.getElementById('numeroEntrada');
 let mensaje = document.getElementById('mensaje');
-
+let intento = document.getElementById('intento')
+let intentos = 0
 // Función para comprobar el número ingresado por el usuario
 function chequearResultado() {
-
+    intentos ++
+    intento.textContent = intentos
     let numeroIngresado = parseInt(numeroEntrada.value);
     
 
